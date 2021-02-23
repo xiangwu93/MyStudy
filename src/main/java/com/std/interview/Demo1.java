@@ -1,4 +1,4 @@
-package com.std.thread;
+package com.std.interview;
 
 import java.util.HashMap;
 import java.util.Map;

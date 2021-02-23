@@ -1,4 +1,4 @@
-package com.std.thread;
+package com.std.likou;
 
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;

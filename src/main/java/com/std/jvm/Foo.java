@@ -1,4 +1,4 @@
-package com.std.thread.jvm;
+package com.std.jvm;
 
 /**
  * @author chenxiangwu

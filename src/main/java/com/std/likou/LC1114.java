@@ -1,4 +1,4 @@
-package com.std.thread;
+package com.std.likou;
 
 /**
  * @author chenxiangwu

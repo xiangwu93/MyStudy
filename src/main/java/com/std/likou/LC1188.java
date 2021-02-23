@@ -1,7 +1,6 @@
-package com.std.thread;
+package com.std.likou;
 
 import java.util.LinkedList;
-import java.util.concurrent.Callable;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
