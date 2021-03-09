@@ -6,7 +6,7 @@ package com.std.spring;
  * @projectName ThreadDemo
  * @date 2021/3/2 18:44
  *
- * IOC：控制反转，一种设计思想，它是Spring的核心。简单点说就是spring管理bean的容器。IOC容器一般具备两个基本功能：
+ * @desc IOC：控制反转，一种设计思想，它是Spring的核心。简单点说就是spring管理bean的容器。IOC容器一般具备两个基本功能：
  * 　　1、通过描述管理Bean，包括发布和获取。
  * 　　2、描述Bean之间的依赖关系。这两个问题深究下去是没有边界的，尤其是Bean之间的依赖关系，这个就是spring的核心。
  *    参考SpringBean简要流程.png
