@@ -72,8 +72,9 @@ public class LinkedReverse {
 
         return newNode;
     }
-
+    volatile int a = 0;
     public static void main(String[] args) {
+
         Node node1 = new Node(1);
         Node node2 = new Node(2);
         Node node3 = new Node(3);

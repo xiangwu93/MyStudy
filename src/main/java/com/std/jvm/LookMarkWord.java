@@ -12,12 +12,26 @@ import org.openjdk.jol.vm.VM;
 public class LookMarkWord {
     public static void main(String[] args) {
         Object md = new Object();
-        System.out.println(ClassLayout.parseInstance(md).toPrintable());
-        synchronized (md){
-            System.out.println(ClassLayout.parseInstance(md).toPrintable());
+        for (int i=1;i<4;i++){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println(ClassLayout.parseInstance(md).toPrintable());
+                synchronized (md){
+                    System.out.println(ClassLayout.parseInstance(md).toPrintable());
+                    System.out.println(Thread.currentThread().getName());
+                }
+            }
+        }).start();
+
         }
-        System.out.println(ClassLayout.parseInstance(md).toPrintable());
+//        System.out.println(ClassLayout.parseInstance(md).toPrintable());
+//        synchronized (md){
+//            System.out.println(ClassLayout.parseInstance(md).toPrintable());
+//        }
+//        System.out.println(ClassLayout.parseInstance(md).toPrintable());
 //        System.out.println(VM.current().details());
+
 
     }
 }

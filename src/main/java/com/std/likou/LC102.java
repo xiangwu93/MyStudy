@@ -42,20 +42,16 @@ public class LC102 {
         }
         //每轮循环
         while (!queue.isEmpty()) {
-            int n = queue.size();
-            List<Integer> level = new ArrayList<>();
-            for (int i = 0; i < n; i++) {
                 //将当前层所有节点出队列
                 TreeNode node = queue.poll();
-                level.add(node.val);
                 if (node.left != null) {
                     queue.add(node.left);
                 }
                 if (node.right != null) {
                     queue.add(node.right);
                 }
-            }
-            res.add(level);
+            System.out.println(node.val + " ");
+
         }
         return res;
     }
